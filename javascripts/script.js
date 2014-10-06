@@ -9789,6 +9789,30 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 
 })( window );
 (function() {
+  $(document).ready(function() {
+    $('.navbar a').click(function(e) {
+      var $this, active, content, id;
+      e.preventDefault();
+      $this = $(this);
+      active = $('.content:visible');
+      id = $this.attr('href');
+      content = $(id);
+      active.removeClass('bounceInRight bounceOutLeft');
+      active.addClass('bounceOutLeft');
+      return active.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        active.removeClass('bounceOutLeft').hide();
+        return content.show().addClass('animated bounceInRight');
+      });
+    });
+    return $('.content').each(function() {
+      var $this;
+      $this = $(this);
+      if ($this.is(':first-child')) {
 
+      } else {
+        return $this.hide();
+      }
+    });
+  });
 
 }).call(this);
