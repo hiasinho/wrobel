@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 2, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -538,6 +539,240 @@ header .nav {
 /* line 145, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_modal.scss */
 .modal .modal-state:checked + .modal-window .modal-inner {
   top: 0; }
+
+/* Slider */
+/* line 40, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 55, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  /* line 62, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-list:focus {
+    outline: none; }
+  /* line 70, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+/* line 75, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-slider .slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide img {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 85, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1; }
+  /* line 92, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  /* line 98, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-track:after {
+    clear: both; }
+  /* line 102, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+/* line 106, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  /* line 110, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  /* line 113, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-slide img {
+    display: block; }
+  /* line 116, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-slide.slick-loading img {
+    display: none; }
+  /* line 122, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  /* line 126, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-initialized .slick-slide {
+    display: block; }
+  /* line 130, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  /* line 134, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Arrows */
+/* line 157, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none; }
+  /* line 173, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    /* line 177, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  /* line 181, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+
+/* line 185, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 194, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-prev {
+  left: -25px; }
+  /* line 196, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  /* line 200, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-prev:before {
+    content: "←"; }
+    /* line 202, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+/* line 207, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-next {
+  right: -25px; }
+  /* line 209, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  /* line 213, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-next:before {
+    content: "→"; }
+    /* line 215, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+/* line 223, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-slider {
+  margin-bottom: 30px; }
+
+/* line 226, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%; }
+  /* line 235, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    /* line 244, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0;
+      font-size: 0;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      /* line 256, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        /* line 258, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      /* line 263, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    /* line 282, /Users/hiasdo/Sites/wrobel/source/stylesheets/mash/_slick.scss */
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -2761,14 +2996,18 @@ html, body {
   position: relative;
   height: 100%;
   width: 100%;
-  background: url("../images/wrobel_1.jpg") no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  z-index: 0; }
+  z-index: 0;
+  -webkit-transition: background-image 2s ease-in-out;
+  -moz-transition: background-image 2s ease-in-out;
+  transition: background-image 2s ease-in-out; }
   @media screen and (min-width: 768px) {
     /* line 32, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header {
       padding: 2.35765% 0; } }
-  /* line 46, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 49, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header:before {
     content: "";
     width: 100%;
@@ -2780,7 +3019,7 @@ html, body {
     background: url("../images/waterprint.svg") no-repeat 200% -100%;
     background: url("../images/waterprint.svg") no-repeat 200% -100%;
     z-index: -2; }
-  /* line 59, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 62, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header:after {
     content: "";
     width: 100%;
@@ -2792,7 +3031,7 @@ html, body {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/subtle_dots.png"), -webkit-linear-gradient(180deg, transparent, #404147), center no-repeat transparent scroll;
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/subtle_dots.png"), linear-gradient(180deg, transparent, #404147), center no-repeat transparent scroll;
     z-index: -1; }
-  /* line 72, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 75, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header .logo {
     float: left;
     display: block;
@@ -2807,7 +3046,7 @@ html, body {
     #header .logo:last-child {
       margin-right: 0; }
     @media screen and (min-width: 768px) {
-      /* line 72, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 75, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .logo {
         float: left;
         display: block;
@@ -2817,7 +3056,7 @@ html, body {
         #header .logo:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 992px) {
-      /* line 72, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 75, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .logo {
         float: left;
         display: block;
@@ -2826,16 +3065,16 @@ html, body {
         /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
         #header .logo:last-child {
           margin-right: 0; } }
-    /* line 89, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+    /* line 92, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header .logo svg {
       width: 300px; }
-    /* line 93, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+    /* line 96, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header .logo #logo {
       fill: #fffbe6; }
-  /* line 98, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 101, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header h1 {
     display: none; }
-  /* line 100, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 103, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header .navbar {
     float: left;
     display: block;
@@ -2846,7 +3085,7 @@ html, body {
     #header .navbar:last-child {
       margin-right: 0; }
     @media screen and (min-width: 768px) {
-      /* line 100, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 103, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .navbar {
         float: left;
         display: block;
@@ -2858,7 +3097,7 @@ html, body {
         #header .navbar:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 992px) {
-      /* line 100, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 103, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .navbar {
         float: left;
         display: block;
@@ -2868,25 +3107,25 @@ html, body {
         /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
         #header .navbar:last-child {
           margin-right: 0; } }
-    /* line 118, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+    /* line 121, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header .navbar nav li {
       display: block;
       width: 100%;
       text-align: center; }
       @media screen and (min-width: 768px) {
-        /* line 118, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+        /* line 121, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
         #header .navbar nav li {
           display: table;
           width: initial; } }
       @media screen and (min-width: 992px) {
-        /* line 118, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+        /* line 121, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
         #header .navbar nav li {
           display: inline-block;
           margin: 0 10px; }
-          /* line 131, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+          /* line 134, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
           #header .navbar nav li:first-child {
             margin-left: 0; } }
-      /* line 136, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 139, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .navbar nav li a {
         display: inherit;
         width: 100%;
@@ -2895,18 +3134,18 @@ html, body {
         font-size: 1.5em;
         padding: 5px 10px; }
         @media screen and (min-width: 768px) {
-          /* line 136, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+          /* line 139, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
           #header .navbar nav li a {
             margin-bottom: 4px; } }
         @media screen and (min-width: 992px) {
-          /* line 136, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+          /* line 139, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
           #header .navbar nav li a {
             font-size: 1.8em; } }
-        /* line 152, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+        /* line 155, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
         #header .navbar nav li a:hover {
           background: #404147;
           color: #fffbe6; }
-  /* line 164, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 167, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header .intro-text {
     float: left;
     display: block;
@@ -2916,7 +3155,7 @@ html, body {
     /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
     #header .intro-text:last-child {
       margin-right: 0; }
-    /* line 168, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+    /* line 171, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header .intro-text a {
       -webkit-transition: all 0.5s ease-out;
       -moz-transition: all 0.5s ease-out;
@@ -2937,17 +3176,17 @@ html, body {
       text-transform: uppercase;
       letter-spacing: .15em;
       text-shadow: none; }
-      /* line 187, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 190, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .intro-text a:hover {
         background-color: #fffbe6;
         border-color: #fffbe6;
         color: #404147; }
-      /* line 193, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 196, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .intro-text a:disabled {
         cursor: not-allowed;
         opacity: 0.5; }
 
-/* line 201, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+/* line 204, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
 #main {
   max-width: 68em;
   margin-left: auto;
@@ -2958,7 +3197,7 @@ html, body {
     content: "";
     display: table;
     clear: both; }
-  /* line 204, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 207, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #main .content {
     float: left;
     display: block;
@@ -2971,7 +3210,7 @@ html, body {
     #main .content:last-child {
       margin-right: 0; }
     @media screen and (min-width: 768px) {
-      /* line 204, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 207, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #main .content {
         float: left;
         display: block;
@@ -2982,7 +3221,7 @@ html, body {
         #main .content:last-child {
           margin-right: 0; } }
 
-/* line 217, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+/* line 220, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
 section {
   max-width: 68em;
   margin-left: auto;
@@ -2992,7 +3231,7 @@ section {
     content: "";
     display: table;
     clear: both; }
-  /* line 219, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 222, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   section aside {
     float: left;
     display: block;
@@ -3001,7 +3240,7 @@ section {
     /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
     section aside:last-child {
       margin-right: 0; }
-  /* line 220, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 223, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   section article {
     float: left;
     display: block;
