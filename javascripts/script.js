@@ -11743,7 +11743,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
         imageNumbers = imageShuffle.slice();
       }
       header.css('background-image', imageUrl(imageNumbers.pop()));
-      return setTimeout(changeImage, 3600);
+      return setTimeout(changeImage, 6000);
     };
     changeImage();
     $('.navbars a').click(function(e) {
