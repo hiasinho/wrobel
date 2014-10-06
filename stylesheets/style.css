@@ -2581,14 +2581,15 @@ html, body {
 #header {
   position: relative;
   height: 100%;
+  width: 100%;
   background: url("../images/wrobel_1.jpg") no-repeat center;
   background-size: cover;
   z-index: 0; }
   @media screen and (min-width: 768px) {
     /* line 32, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header {
-      padding: 2.35765%; } }
-  /* line 45, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      padding: 2.35765% 0; } }
+  /* line 46, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header:before {
     content: "";
     width: 100%;
@@ -2600,7 +2601,7 @@ html, body {
     background: url("../images/waterprint.svg") no-repeat 200% -100%;
     background: url("../images/waterprint.svg") no-repeat 200% -100%;
     z-index: -2; }
-  /* line 58, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 59, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header:after {
     content: "";
     width: 100%;
@@ -2612,7 +2613,7 @@ html, body {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/worn_dots.png"), -webkit-linear-gradient(180deg, transparent, #404147), center no-repeat transparent scroll;
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/worn_dots.png"), linear-gradient(180deg, transparent, #404147), center no-repeat transparent scroll;
     z-index: -1; }
-  /* line 71, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 72, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header .logo {
     float: left;
     display: block;
@@ -2620,14 +2621,13 @@ html, body {
     width: 100%;
     position: relative;
     background: #404147;
-    min-width: 340px;
-    padding: 20px 0;
+    padding: 2.35765% 0;
     text-align: center; }
     /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
     #header .logo:last-child {
       margin-right: 0; }
     @media screen and (min-width: 768px) {
-      /* line 71, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 72, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .logo {
         float: left;
         display: block;
@@ -2637,7 +2637,7 @@ html, body {
         #header .logo:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 992px) {
-      /* line 71, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 72, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .logo {
         float: left;
         display: block;
@@ -2646,16 +2646,16 @@ html, body {
         /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
         #header .logo:last-child {
           margin-right: 0; } }
-    /* line 87, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+    /* line 88, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header .logo svg {
       width: 300px; }
-    /* line 91, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+    /* line 92, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header .logo #logo {
       fill: #fffbe6; }
-  /* line 96, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 97, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header h1 {
     display: none; }
-  /* line 98, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 99, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header .navbar {
     float: left;
     display: block;
@@ -2666,18 +2666,19 @@ html, body {
     #header .navbar:last-child {
       margin-right: 0; }
     @media screen and (min-width: 768px) {
-      /* line 98, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 99, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .navbar {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%;
+        margin-right: 0;
         margin-bottom: 0px; }
         /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
         #header .navbar:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 992px) {
-      /* line 98, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 99, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .navbar {
         float: left;
         display: block;
@@ -2687,25 +2688,25 @@ html, body {
         /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
         #header .navbar:last-child {
           margin-right: 0; } }
-    /* line 115, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+    /* line 117, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
     #header .navbar nav li {
       display: block;
       width: 100%;
       text-align: center; }
       @media screen and (min-width: 768px) {
-        /* line 115, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+        /* line 117, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
         #header .navbar nav li {
           display: table;
           width: initial; } }
       @media screen and (min-width: 992px) {
-        /* line 115, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+        /* line 117, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
         #header .navbar nav li {
           display: inline-block;
           margin: 0 10px; }
-          /* line 128, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+          /* line 130, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
           #header .navbar nav li:first-child {
             margin-left: 0; } }
-      /* line 133, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 135, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #header .navbar nav li a {
         display: inherit;
         width: 100%;
@@ -2714,28 +2715,59 @@ html, body {
         font-size: 1.5em;
         padding: 5px 10px; }
         @media screen and (min-width: 768px) {
-          /* line 133, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+          /* line 135, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
           #header .navbar nav li a {
             margin-bottom: 4px; } }
         @media screen and (min-width: 992px) {
-          /* line 133, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+          /* line 135, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
           #header .navbar nav li a {
             font-size: 1.8em; } }
-        /* line 149, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+        /* line 151, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
         #header .navbar nav li a:hover {
           background: #404147;
           color: #fffbe6; }
-  /* line 161, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 163, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header .intro-text {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.7); }
     /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
     #header .intro-text:last-child {
       margin-right: 0; }
+    /* line 167, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+    #header .intro-text a {
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+      margin-top: 50px;
+      -webkit-font-smoothing: antialiased;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 6px;
+      line-height: 1.33;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      color: white;
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 300;
+      line-height: 1;
+      padding: 12px 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      text-shadow: none; }
+      /* line 186, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      #header .intro-text a:hover {
+        background-color: #fffbe6;
+        border-color: #fffbe6;
+        color: #404147; }
+      /* line 192, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      #header .intro-text a:disabled {
+        cursor: not-allowed;
+        opacity: 0.5; }
 
-/* line 166, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+/* line 200, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
 #main {
   max-width: 68em;
   margin-left: auto;
@@ -2746,7 +2778,7 @@ html, body {
     content: "";
     display: table;
     clear: both; }
-  /* line 169, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 203, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #main .content {
     float: left;
     display: block;
@@ -2759,7 +2791,7 @@ html, body {
     #main .content:last-child {
       margin-right: 0; }
     @media screen and (min-width: 768px) {
-      /* line 169, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+      /* line 203, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
       #main .content {
         float: left;
         display: block;
@@ -2770,7 +2802,7 @@ html, body {
         #main .content:last-child {
           margin-right: 0; } }
 
-/* line 182, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+/* line 216, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
 section {
   max-width: 68em;
   margin-left: auto;
@@ -2780,7 +2812,7 @@ section {
     content: "";
     display: table;
     clear: both; }
-  /* line 184, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 218, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   section aside {
     float: left;
     display: block;
@@ -2789,7 +2821,7 @@ section {
     /* line 38, /Users/hiasdo/.rvm/gems/ruby-2.1.2/gems/neat-1.6.0/app/assets/stylesheets/grid/_span-columns.scss */
     section aside:last-child {
       margin-right: 0; }
-  /* line 185, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
+  /* line 219, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   section article {
     float: left;
     display: block;
