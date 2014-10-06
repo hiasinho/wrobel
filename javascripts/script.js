@@ -9790,7 +9790,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 })( window );
 (function() {
   $(document).ready(function() {
-    $('.navbar a').click(function(e) {
+    $('.navbars a').click(function(e) {
       var $this, active, content, id;
       e.preventDefault();
       $this = $(this);
@@ -9804,7 +9804,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
         return content.show().addClass('animated bounceInRight');
       });
     });
-    return $('.content').each(function() {
+    return $('.contents').each(function() {
       var $this;
       $this = $(this);
       if ($this.is(':first-child')) {
