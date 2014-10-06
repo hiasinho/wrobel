@@ -2789,8 +2789,8 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/worn_dots.png"), -webkit-linear-gradient(180deg, transparent, #404147), center no-repeat transparent scroll;
-    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/worn_dots.png"), linear-gradient(180deg, transparent, #404147), center no-repeat transparent scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/subtle_dots.png"), -webkit-linear-gradient(180deg, transparent, #404147), center no-repeat transparent scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/subtle_dots.png"), linear-gradient(180deg, transparent, #404147), center no-repeat transparent scroll;
     z-index: -1; }
   /* line 72, /Users/hiasdo/Sites/wrobel/source/stylesheets/style.scss */
   #header .logo {
