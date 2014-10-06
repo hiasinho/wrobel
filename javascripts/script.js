@@ -11730,7 +11730,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
     return _results;
   };
 
-  preload(['/images/kitchen1.jpg', '/images/kitchen2.jpg', '/images/kitchen3.jpg']);
+  preload(['images/kitchen1.jpg', 'images/kitchen2.jpg', 'images/kitchen3.jpg']);
 
   $(document).ready(function() {
     var changeImage, header, imageNumbers, imageShuffle, imageUrl, shuffle;
@@ -11750,7 +11750,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
     imageShuffle = shuffle([1, 2, 3]);
     imageNumbers = [];
     imageUrl = function(number) {
-      return "url('/images/kitchen" + number + ".jpg')";
+      return "url('images/kitchen" + number + ".jpg')";
     };
     header = $('#header');
     changeImage = function() {
