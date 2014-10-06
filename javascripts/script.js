@@ -11717,6 +11717,21 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 
 }));
 (function() {
+  var preload;
+
+  preload = function(images) {
+    var image, loader, _i, _len, _results;
+    _results = [];
+    for (_i = 0, _len = images.length; _i < _len; _i++) {
+      image = images[_i];
+      loader = new Image();
+      _results.push(loader.src = image);
+    }
+    return _results;
+  };
+
+  preload(['/images/kitchen1.jpg', '/images/kitchen2.jpg', '/images/kitchen3.jpg']);
+
   $(document).ready(function() {
     var changeImage, header, imageNumbers, imageShuffle, imageUrl, shuffle;
     shuffle = function(o) {
