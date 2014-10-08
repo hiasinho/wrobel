@@ -45,12 +45,12 @@
               <div class='modal-inner'>
                 <label class='modal-close' for='modal-1'></label>
                 <h1>Rückruf</h1>
-                <form action='//forms.brace.io/beck.reinhard@me.com'>
+                <form action='//forms.brace.io/beckreinhard@me.com' method='POST'>
                   <input name='name' placeholder='Name und/oder Firma' type='text'>
                   <input name='_replyto' placeholder='Ihre E-Mail (optional)' type='email'>
                   <input name='_subject' placeholder='Bitte zurückrufen' type='hidden'>
                   <input name='message' placeholder='Ihre Telefonnummer' type='text'>
-                  <!-- %textarea{:name => "message", :rows => "5"} -->
+                  <!-- %input{:name => "_next", :type => "hidden", :value => url_to('/index.html')}/ -->
                   <input type='submit' value='Send'>
                 </form>
               </div>
