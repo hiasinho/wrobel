@@ -1,0 +1,54 @@
+---
+title: Wrobel Montageservice GbR
+---
+
+.intro-text
+  %h4 
+    Ihr zuverlässiger Partner für 
+    %br/
+    %strong Küchenmontagen, Laminat- und Parkettverlegungen
+    %br/
+    im Großraum München/Ingolstadt
+  %p
+    Für ausführliche Informationen, aktuelle Preislisten sowie Terminvereinbarungen stehen wir jederzeit telefonisch zur Verfügung. Wir werden uns umgehend bei Ihnen melden. Ihr Wrobel Montageteam freut sich auf einen persönlichen Kontakt.
+  
+
+.call
+  %a.ghost.hide-desktop{href: 'tel:01709092120'} Anrufen
+  .modal
+    %label{:for => "modal-1"}
+      .btn.js-btn Rückruf
+    %input#modal-1.modal-state{:type => "checkbox"}/
+    .modal-window
+      .modal-inner
+        %label.modal-close{:for => "modal-1"}
+        %h1 Rückruf
+        %p Hinterlassen Sie uns Ihre Telefonnummer und wir werden uns umgehend bei Ihnen melden.
+        %form{:action => "//forms.brace.io/info@wrobel-ms.de", method: 'POST'}
+          %input{:name => "name", :type => "text", placeholder: "Name und/oder Firma"}
+          %input{:name => "_subject", :type => "hidden", :value => "Bitte zurückrufen"}
+          %input{:name => "message", :type => "text", :placeholder => "Ihre Telefonnummer"}/
+          %input{:name => "_next", :type => "hidden", :value => 'http://www.hiasinho.com/wrobel'}/
+          %input{:type => "submit", :value => "Abschicken"}
+
+  .modal
+    %label{:for => "modal-contact"}
+      .btn.js-btn Kontakt
+    %input#modal-contact.modal-state{:type => "checkbox"}/
+    .modal-window
+      .modal-inner
+        %label.modal-close{:for => "modal-contact"}
+        %h1 Kontakt
+        %p
+          Wrobel Montageservice GbR<br>
+          Untere Dorfstrasse 1<br>
+          85301 Schweitenkirchen
+        %p
+          Büro: 08444 / 92 49 142<br>
+          Florian Wrobel: 0170 / 909 21 20<br>
+          Peter Wrobel: 0176 / 31 22 56 59<br>
+        
+        %p 
+          Web:   www.wrobel-ms.de<br>
+          Mail:  
+          = mail_to 'info@wrobel-ms.de'

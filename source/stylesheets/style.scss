@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+@import "mash";
+@import "animate";
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container { @include outer-container; }
+.row { @include row; }
+
+html, body {
+  height: 100%;
+}
+body {
+  // background: image-url('wrobel_1.jpg') no-repeat center;
+  // background-size: cover;
+
+  // @include background(url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/worn_dots.png"), linear-gradient(180deg, transparent, $brand-primary) no-repeat, image-url('wrobel_1.jpg') no-repeat center);
+  // background-size: cover;
+
+}
+@media (min-width: 1120px), (min-height: 630px) {
+  // body { background-size: auto; }
+}
+
+.slider1 { background-image: image-url('kitchen1.jpg'); }
+.slider2 { background-image: image-url('kitchen2.jpg'); }
+.slider3 { background-image: image-url('kitchen3.jpg'); }
+
+#header {
+  // @include outer-container;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  // background: image-url('wrobel_1.jpg') no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: auto;
+
+  @include pad(flex-gutter() 0);
+  @include transition (background-image 3.0s ease-in-out);
+
+  @include media(min-width $screen-sm) {
+    
+  }
+
+  &:before {
+    content: "";
+    width: 500px;
+    height: 500px;
+    display: block;
+    position: fixed;
+    @include background(image-url('waterprint.svg') no-repeat center);
+    // background-attachment: fixed;
+    z-index: -2;
+    bottom: -213px;
+    right: -134px;
+    opacity: 0.75;
+    background-size: contain;
+  }
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include texture(180deg, rgba(black, 0.3), rgba(black, 0.6), 39, 0); // gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+    // @include background(url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/subtle_dots.png"), linear-gradient(180deg, transparent, rgba(black, 0.6)), center no-repeat transparent fixed);
+    z-index: -1;
+  }
+
+  .logo {
+    @include span-columns(12);
+    position: relative;
+    // background: $brand-primary;
+    // min-width: 340px;
+    height: 80px;
+    // @include pad(flex-gutter() 0);
+    text-align: center;
+    @include background(image-url('logo.svg') no-repeat);
+    background-position: center;
+    @include transition (all .5s ease-in-out);
+
+    @include media(min-width $screen-sm) {
+      // @include span-columns(6);
+      height: 90px;
+      
+    }
+
+    @include media(min-width $screen-md) {
+      // @include span-columns(4);
+      height: 109px;
+    }
+
+    @include media(min-width $screen-lg) {
+      @include span-columns(12);
+      // background-position: center left;
+    }
+
+    svg {
+      width: 300px;
+    }
+
+    #logo {
+      fill: $creme;
+    }
+  }
+
+  .container > h1 { display: none; }
+
+  .container {
+    padding-bottom: 40px;
+  }
+
+  .intro-text {
+    @include span-columns(12);
+  }
+
+  .call {
+    @include span-columns(12);
+    text-align: center;
+
+    @include media(min-width $screen-lg) {
+      // text-align: left;
+    }
+
+    a {
+      color: $brand-primary;
+    }
+
+    a.ghost {
+      @include transition (all .5s ease-out);
+      margin-bottom: 10px;
+      -webkit-font-smoothing: antialiased;
+      background-color: rgba(black, 0.4);
+      border-radius: 6px;
+      line-height: 1.33;
+      // border: 1px solid rgba(white, 0.7);
+      color: $brand-secondary;
+      display: inline-block;
+      font-size: $base-font-size;
+      font-weight: 300;
+      line-height: 1;
+      padding: 12px 40px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      text-shadow: none;
+      width: 300px;
+
+      &:hover {
+        background-color: $brand-secondary;
+        border-color: $brand-secondary;
+        color: $brand-primary;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
+      &.hide-desktop {
+        @include media(min-width $screen-sm) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+#main {
+  @include outer-container;
+  word-wrap: break-word;
+
+  .content {
+    @include span-columns(12);
+    @include pad(flex-gutter() 0);
+    position: absolute;
+    background: rgba($brand-primary, 0.7);
+    color: $brand-secondary;
+
+    // @include media(min-width $screen-sm) {
+    //   @include span-columns(8);
+    //   @include shift(4);
+    // }
+  }
+}
+
+#footer {
+  position: fixed;
+  bottom: 0px;
+  padding: 5px;
+  width: 100%;
+  font-size: 0.8em;
+  color: $brand-secondary;
+  text-align: center;
+  font-weight: 300;
+  @include transition (background .4s ease-in-out);
+
+  @include media(min-width $screen-sm) {
+    padding: 10px;
+  }
+
+  @include media(min-width $screen-sm) {
+    font-size: 0.9em;
+  }
+
+  &:hover {
+    background-color: rgba(black, 0.4);
+  }
+
+  &.scroll {
+    background-color: rgba(black, 0.4);
+  }
+}
+
+section {
+  @include outer-container;
+  aside { @include span-columns(3); }
+  article { @include span-columns(9); }
+}

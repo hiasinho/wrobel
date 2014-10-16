@@ -1,0 +1,18 @@
+header .nav {
+  padding: 10px 10px;
+  background: $brand-primary;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $brand-primary-dark
+      }
+    }
+  }
+
+}
